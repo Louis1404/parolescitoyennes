@@ -1,0 +1,98 @@
+.banner {
+  background-color: white;
+  text-align: center;
+  height: 450px;
+  /* if you have a 70px navbar => height: calc(100vh - 70px); */
+  background-size: cover !important;
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+@media(max-width: 4000px) {
+  .logo-banner {
+    width: 60%;
+  }
+  p {
+    width: 500px;
+  }
+}
+
+@media(max-width: 1000px) {
+  .logo-banner {
+    width: 80%;
+  }
+  p {
+    width: 400px;
+  }
+}
+
+@media(max-width: 700px) {
+  .logo-banner {
+    width: 100%;
+  }
+  p {
+    width: 300px;
+  }
+}
+
+#content {
+  display: flex;
+  flex-direction: column;
+}
+
+#newsletter {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 30px;
+    border-radius: 3px;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+}
+
+input[type='email'] {
+    outline: none;
+    border-radius: 3px;
+    width: 75%;
+    width-max: 250px;
+    padding: 7px;
+    border: 1px solid $light-gray;
+}
+
+#button {
+    color: white;
+    text-decoration: none;
+    border-radius: 3px;
+    width: 80px;
+    padding: 7px;
+    margin-left: 20px;
+    background: $blue;
+  &:hover {
+      background-color: $blue;
+      opacity: 0.8;
+  }
+}
+
+#proposition {
+  text-align: right;
+  padding: 5px;
+  .red-link {
+    color: $red;
+    font-weight: bold;
+    &:hover {
+      color: $green;
+      font-weight: bold;
+      text-decoration: none;
+    }
+  }
+}
+
+.wrapper {
+  background-color: white;
+}
