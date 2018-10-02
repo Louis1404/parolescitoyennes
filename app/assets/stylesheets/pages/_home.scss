@@ -1,3 +1,8 @@
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+}
+
 .banner {
   background-color: white;
   text-align: center;
@@ -9,73 +14,67 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-}
-
-@media(max-width: 4000px) {
   .logo-banner {
     width: 60%;
   }
   p {
-    width: 500px;
+    width: 420px;
   }
-}
-
-@media(max-width: 1000px) {
-  .logo-banner {
-    width: 80%;
+  @media(max-width: 1000px) {
+    .logo-banner {
+      width: 80%;
+    }
+    p {
+      width: 380px;
+    }
   }
-  p {
-    width: 400px;
+  @media(max-width: 700px) {
+    .logo-banner {
+      width: 100%;
+      padding-top: 30px;
+    }
+    p {
+      width: 300px;
+    }
   }
-}
-
-@media(max-width: 700px) {
-  .logo-banner {
-    width: 100%;
-  }
-  p {
-    width: 300px;
-  }
-}
-
-#content {
-  display: flex;
-  flex-direction: column;
 }
 
 #newsletter {
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-    margin-top: 30px;
-    border-radius: 3px;
-}
-
-body {
-    font-family: 'Lato', sans-serif;
-    font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
 }
 
 input[type='email'] {
     outline: none;
+    text-align: center;
     border-radius: 3px;
-    width: 75%;
-    width-max: 250px;
+    width: 280px;
+    margin-bottom: 10px;
+    margin-top: 20px;
     padding: 7px;
+    background-color: $light-gray;
+    color: $gray;
     border: 1px solid $light-gray;
 }
 
-#button {
-    color: white;
-    text-decoration: none;
-    border-radius: 3px;
-    width: 80px;
-    padding: 7px;
-    margin-left: 20px;
-    background: $blue;
+#button-newsletter{
+  width: 280px;
+  padding: 7px;
+  margin-bottom: 10px;
+  border-radius: 3px;
+  background: $blue;
   &:hover {
-      background-color: $blue;
-      opacity: 0.8;
+    background-color: $blue;
+    opacity: 0.8;
+  }
+  a {
+    color: white;
+    padding: 10px 20px 10px 20px;
+  }
+  a:hover{
+    text-decoration: none;
   }
 }
 
@@ -94,5 +93,7 @@ input[type='email'] {
 }
 
 .wrapper {
+  padding-top: 50px;
   background-color: white;
+  padding-bottom: 100px;
 }

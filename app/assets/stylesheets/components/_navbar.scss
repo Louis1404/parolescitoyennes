@@ -8,14 +8,16 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  @media (max-width: 600px) {
+    justify-content: center;
+  }
+  flex-wrap: wrap;
 }
 
-/* Logo */
 .navbar-logo img {
-  height: 50px;
+  max-height: 50px;
 }
 
-/* Right section */
 .navbar-center {
   display: flex;
   align-items: center;
@@ -25,13 +27,14 @@
 /* Basic navbar item */
 .navbar-item {
   cursor: pointer;
-  padding: 0 20px;
+  padding: 8px;
 }
 
 /* Navbar link */
 .navbar-link {
   color: $gray;
-  font-size: 16px;
+  font-size: 14px;
+  font-weight: bold;
 }
 .navbar-link:hover {
   color: $blue;
@@ -49,6 +52,9 @@
   opacity: 0.3;
   text-decoration: none;
   font-size: 24px;
+  @media (max-width: 600px) {
+    font-size: 18px;
+  }
   padding: 0px 10px;
   &:hover {
     color: $blue;
