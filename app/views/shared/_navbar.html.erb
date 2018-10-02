@@ -1,26 +1,26 @@
-
-  <div class="navbar-parolescitoyennes">
-
-      <!-- Logo -->
-        <a href="/" class="navbar-logo">
-          <%= image_tag ("bulles.png") %>
-        </a>
-      <!-- Navigation -->
-
-        <div class="navbar-center">
-          <a href="" class="navbar-item navbar-link">Qui nous sommes</a>
-          <a href="" class="navbar-item navbar-link">J'ai une proposition</a>
-        </div>
-        <!-- Social media icons -->
-
-
-      <div class="navbar-sm-links">
-        <a href="#"><i class="fab fa-facebook"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
-        <a href="#"><i class="fab fa-twitter"></i></a>
-        <a href="#"><i class="fab fa-youtube"></i></a>
-      </div>
+<div class="navbar-parolescitoyennes">
+<!-- Logo -->
+  <%= link_to root_path, class: "navbar-logo" do %>
+    <%= image_tag ("bulles.png") %>
+  <% end %>
+<!-- Navigation -->
+  <div class="navbar-center">
+    <ul class="list-inline">
+      <li>
+        <%= link_to "Qui nous sommes", quinoussommes_path, class: "navbar-item navbar-link", id: "quinoussommes"%>
+      </li>
+      <li>
+        <%= link_to "J'ai une proposition", proposition_path, class: "navbar-item navbar-link", id: "jaiuneproposition" %>
+      </li>
   </div>
+  <!-- Social media icons -->
+  <div class="navbar-sm-links">
+    <a href="#"><i class="fab fa-facebook"></i></a>
+    <a href="#"><i class="fab fa-instagram"></i></a>
+    <a href="#"><i class="fab fa-twitter"></i></a>
+    <a href="#"><i class="fab fa-youtube"></i></a>
+  </div>
+</div>
 
 
 
