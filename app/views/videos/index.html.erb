@@ -1,10 +1,12 @@
 <div class="banner">
   <%= image_tag "parolescitoyennes.png", class:"logo-banner" %>
     <p>Lorem ipsum dolor sit amet consectetur adipiscing, elit ad natoque etiam accumsan ornare sem, lectus convallis habitasse nascetur senectus. Platea ante nunc nostra aptent leo non, nascetur egestas sociosqu mattis eu, curabitur ultricies ornare suspendisse sociis.</p>
-  <div id="content">
-    <div id="newsletter">
+  <div id="newsletter">
+    <div>
       <input type="email" placeholder="Votre adresse email"></input>
-      <a href="#" id="button">Envoyer</a>
+    </div>
+    <div id="button-newsletter">
+      <a href="#">Je souhaite me tenir informé(e)</a>
     </div>
     <div id="proposition">
       <p>J'ai une proposition à partager, je clique <a href="#" class="red-link">ici</a></p>
@@ -14,6 +16,23 @@
 <div class="wrapper">
   <div class="container">
     <h3>Vos propositions en vidéo</h2>
+      <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-4">
+          <%= render 'videos/card' %>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4">
+          <%= render 'videos/card' %>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4">
+          <%= render 'videos/card' %>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4">
+          <%= render 'videos/card' %>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4">
+          <%= render 'videos/card' %>
+        </div>
+      </div>
   </div>
 </div>
 
