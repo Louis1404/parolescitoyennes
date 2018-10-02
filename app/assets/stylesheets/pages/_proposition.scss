@@ -1,0 +1,19 @@
+.container-form {
+  display: flex;
+  justify-content: center;
+}
+
+.form {
+  width: 700px;
+}
+
+::-webkit-input-placeholder {
+   font-size: 14px!important;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+      font-size: 14px!important;
+}
+::-moz-placeholder {  /* Firefox 19+ */
+      font-size: 14px!important;
+}
