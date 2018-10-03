@@ -34,6 +34,8 @@ gem 'simple_form'
 gem 'font-awesome-sass', '~> 5.0.9'
 gem 'jquery-rails'
 
+gem "letter_opener", group: :development
+
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
 # Authentification
@@ -61,6 +63,7 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
+  gem 'dotenv-rails'
 end
 
 group :test do
@@ -68,6 +71,7 @@ group :test do
   gem 'pry-byebug'
   gem 'pry-rails'
   gem 'dotenv-rails'
+
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '>= 2.15'
   gem 'selenium-webdriver'
