@@ -13,6 +13,6 @@ class MessageMailer < ApplicationMailer
       @titre = message.titre
       @contenu = message.contenu
 
-      mail to: "louisburette14@gmail.com", from: message.email
+      mail to: "louisburette14@gmail.com", from: message.email, subject: "Paroles Citoyennes Villeneuve 2020"
     end
 end
