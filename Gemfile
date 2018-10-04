@@ -35,6 +35,8 @@ gem 'font-awesome-sass', '~> 5.0.9'
 gem 'jquery-rails'
 
 gem "letter_opener", group: :development
+# mailing server
+gem "postmark-rails"
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'

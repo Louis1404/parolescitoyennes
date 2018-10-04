@@ -1,34 +1,42 @@
 <div class="wrapper">
-  <div class="container container-form">
-    <%= simple_form_for @message, url: create_proposition_path do |f| %>
-      <%= notice %>
-      <%= @message.errors.full_messages.join(', ') %>
-      <div class="form-group row">
-        <div class="col-xs-6">
-          <%= f.text_field :prenom, class: "form-control", placeholder: 'Prénom' %>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-6 col-sm-offset-3">
+        <div class="form-proposition">
+          <%= simple_form_for @message, url: create_proposition_path do |f| %>
+            <%= notice %>
+            <%= @message.errors.full_messages.join(', ') %>
+            <div class="form-inputs">
+              <div class="form-row">
+                <div class="form-group col-sm-6">
+                  <%= f.text_field :prenom, class: "form-control", placeholder: 'Prénom' %>
+                </div>
+                <div class="form-group col-sm-6">
+                  <%= f.text_field :nom, class: "form-control", placeholder: 'Nom' %>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-sm-6">
+                  <%= f.text_field :email, class: "form-control", placeholder: 'Adresse email' %>
+                </div>
+                <div class="form-group col-sm-6">
+                  <%= f.text_field :telephone, class: "form-control", placeholder: 'Téléphone' %>
+                </div>
+              </div>
+              <div class="form-group col-sm-12">
+                <%= f.text_field :titre, class: "form-control", placeholder: 'Titre de votre proposition' %>
+              </div>
+              <div class="form-group col-sm-12">
+                <%= f.text_area :contenu, class: "form-control text-area", placeholder: 'Contenu de votre proposition', rows: 10 %>
+              </div>
+              <div class="form-group col-sm-12">
+                <%= f.submit 'Envoyer ma proposition', class: "btn btn-primary form-control" %>
+              </div>
+            </div>
+          <% end %>
         </div>
-        <div class="col-xs-6">
-          <%= f.text_field :nom, class: "form-control", placeholder: 'Nom' %>
-        </div>
       </div>
-      <div class="form-group row">
-        <div class="col-xs-6">
-          <%= f.text_field :email, class: "form-control", placeholder: 'Adresse email' %>
-        </div>
-        <div class="col-xs-6">
-          <%= f.text_field :telephone, class: "form-control", placeholder: 'Numéro de téléphone' %>
-        </div>
-      </div>
-      <div class="form-group row">
-        <%= f.text_field :titre, class: "form-control", placeholder: 'Titre de votre proposition' %>
-      </div>
-      <div class="form-group row">
-        <%= f.text_area :contenu, class: "form-control", placeholder: 'Contenu de votre proposition' %>
-      </div>
-      <div class="form-group row">
-        <%= f.submit 'Envoyer ma proposition', class: "btn btn-primary form-control" %>
-      </div>
-    <% end %>
+    </div>
   </div>
 </div>
 <%= render 'shared/bluefooter' %>
