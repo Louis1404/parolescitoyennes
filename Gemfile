@@ -38,6 +38,9 @@ gem "letter_opener", group: :development
 # mailing server
 gem "postmark-rails"
 
+#mailchimp
+gem 'gibbon'
+
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
 # Authentification

@@ -39,14 +39,14 @@ body {
   }
 }
 
-#newsletter {
+#mc-embedded-subscribe-form {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
 }
 
-input[type='email'] {
+.email-newsletter {
     outline: none;
     text-align: center;
     border-radius: 3px;
@@ -59,33 +59,38 @@ input[type='email'] {
     border: 1px solid $light-gray;
 }
 
-#button-newsletter{
-  width: 280px;
+.email {
+  height: 35px;
+}
+
+.required {
+  color: $red !important;
+}
+
+.button-newsletter{
+  background-color: $blue;
+  text-align: left;
+  height: 35px;
+  width: 96%;
   padding: 7px;
   margin-bottom: 10px;
   border-radius: 3px;
   background: $blue;
+  color: white;
   &:hover {
     background-color: $blue;
     opacity: 0.8;
   }
-  a {
-    color: white;
-    padding: 10px 20px 10px 20px;
-  }
-  a:hover{
-    text-decoration: none;
-  }
 }
 
 #proposition {
-  text-align: right;
-  padding: 5px;
+  text-align: left;
+  padding: 7px;
   .red-link {
     color: $red;
     font-weight: bold;
     &:hover {
-      color: $green;
+      color: $blue;
       font-weight: bold;
       text-decoration: none;
     }

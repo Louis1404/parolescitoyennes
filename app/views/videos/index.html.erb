@@ -1,18 +1,36 @@
 <div class="banner">
   <%= image_tag "parolescitoyennes.png", class:"logo-banner" %>
-    <p>Lorem ipsum dolor sit amet consectetur adipiscing, elit ad natoque etiam accumsan ornare sem, lectus convallis habitasse nascetur senectus. Platea ante nunc nostra aptent leo non, nascetur egestas sociosqu mattis eu, curabitur ultricies ornare suspendisse sociis.</p>
-  <div id="newsletter">
-    <div>
-      <input type="email" placeholder="Votre adresse email"></input>
-    </div>
-    <div id="button-newsletter">
-      <a href="#">Je souhaite me tenir informé(e)</a>
-    </div>
-    <div id="proposition">
-      <p>J'ai une proposition à partager, je clique <a href="#" class="red-link">ici</a></p>
-    </div>
+  <p>Lorem ipsum dolor sit amet consectetur adipiscing, elit ad natoque etiam accumsan ornare sem, lectus convallis habitasse nascetur senectus. Platea ante nunc nostra aptent leo non, nascetur egestas sociosqu mattis eu, curabitur ultricies ornare suspendisse sociis.</p>
+
+  <!-- Begin Mailchimp Signup Form -->
+  <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
+  <style type="text/css">
+    #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+    /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+       We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+  </style>
+  <div id="mc_embed_signup">
+    <form action="https://herokuapp.us19.list-manage.com/subscribe/post?u=163fbe7e792cfdc3b87d3e62f&amp;id=9b37e94992" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+      <div id="mc_embed_signup_scroll">
+        <div class="mc-field-group">
+          <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Votre adresse email*">
+        </div>
+      </div>
+      <div id="mce-responses" class="clear">
+        <div class="response" id="mce-error-response" style="display:none"></div>
+       <div class="response" id="mce-success-response" style="display:none"></div>
+      </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+      <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_163fbe7e792cfdc3b87d3e62f_9b37e94992" tabindex="-1" value=""></div>
+      <input type="submit" value="Je souhaite me tenir informé(e)" name="subscribe" class="button-newsletter">
+      <div id="proposition">
+       <p>J'ai une proposition à partager, je clique <a href="#" class="red-link">ici</a></p>
+      </div>
+    </form>
   </div>
+  <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';fnames[5]='BIRTHDAY';ftypes[5]='birthday';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+  <!--End mc_embed_signup-->
 </div>
+
 <div class="wrapper">
   <div class="container">
     <h3>Vos propositions en vidéo</h2>
@@ -35,6 +53,5 @@
       </div>
   </div>
 </div>
-
 
 <%= render 'shared/redfooter' %>
