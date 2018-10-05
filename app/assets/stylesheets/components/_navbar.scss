@@ -33,12 +33,28 @@
 /* Navbar link */
 .navbar-link {
   color: $gray;
+  opacity: 0.7;
   font-size: 14px;
   font-weight: bold;
+  &.navbar-link:hover {
+    opacity: 0.8;
+    color: $gray;
+    text-decoration: none;
+  }
 }
-.navbar-link:hover {
+
+.quinoussommes-item{
+  color: $green;
+  &:hover{
+    color:$gray;
+  }
+}
+
+.proposition-item{
   color: $blue;
-  text-decoration: none;
+  &:hover{
+    color:$gray;
+  }
 }
 
 /* social medias */
@@ -47,7 +63,22 @@
   align-items: center;
 }
 
-.navbar-sm-links a {
+.navbar-sm-red-links a {
+  color: $red;
+  opacity: 0.3;
+  text-decoration: none;
+  font-size: 24px;
+  @media (max-width: 600px) {
+    font-size: 18px;
+  }
+  padding: 0px 10px;
+  &:hover {
+    color: $red;
+    opacity: 1;
+  }
+}
+
+.navbar-sm-blue-links a {
   color: $blue;
   opacity: 0.3;
   text-decoration: none;
@@ -62,6 +93,20 @@
   }
 }
 
+.navbar-sm-green-links a {
+  color: $green;
+  opacity: 0.3;
+  text-decoration: none;
+  font-size: 24px;
+  @media (max-width: 600px) {
+    font-size: 18px;
+  }
+  padding: 0px 10px;
+  &:hover {
+    color: $green;
+    opacity: 1;
+  }
+}
 .active {
   color: $red;
 }
