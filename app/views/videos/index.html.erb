@@ -1,7 +1,7 @@
 <%= render 'shared/rednavbar' %>
 <div class="banner">
   <%= image_tag "parolescitoyennes.png", class:"logo-banner" %>
-  <p>Bienvenue sur notre plateforme collaborative « Paroles Citoyennes Villeneuve d’Ascq 2020 » ! Cette plateforme ouverte s’adresse à toutes celles et ceux qui veulent faire vivre le débat d’idées et formuler des propositions pour notre ville.</p>
+  <p>Bienvenue sur notre plateforme collaborative <strong>Paroles Citoyennes Villeneuve d’Ascq 2020</strong> ! Cette plateforme ouverte s’adresse à toutes celles et ceux qui veulent faire vivre le débat d’idées et formuler des propositions pour notre ville.</p>
 
   <!-- Begin Mailchimp Signup Form -->
   <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
@@ -17,16 +17,13 @@
       #mc-embedded-subscribe-form .mc_fieldset{border:none;min-height: 0px;padding-bottom:0px;}
   </style>
   <div class="newsletter">
-    <div id="mc_embed_signup">
-      <form action="https://didier-manier.us10.list-manage.com/subscribe/post?u=14c90e8e347fe00387b0b20d2&amp;id=0492b74620" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-        <div id="mc_embed_signup_scroll">
-          <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Adresse e-mail" style="width: 270px">
-        <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-          <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_14c90e8e347fe00387b0b20d2_0492b74620" tabindex="-1" value=""></div>
-          <div class="clear"><input type="submit" value="Je reste informé.e" name="subscribe" id="mc-embedded-subscribe" class="button" style="background-color:#0d9b8c; width: 120px; padding-right: 5px; padding-left: 5px;"></div>
+    <form action="https://didier-manier.us10.list-manage.com/subscribe/post?u=14c90e8e347fe00387b0b20d2&amp;id=0492b74620" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+        <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Adresse e-mail" style="width: 270px">
+      <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_14c90e8e347fe00387b0b20d2_0492b74620" tabindex="-1" value="">
         </div>
-      </form>
-    </div>
+        <button type="submit" name="subscribe" id="mc-embedded-subscribe", class="btn btn-primary">Je reste informé.e</button>
+    </form>
     <div id="proposition">
       <p><strong>J'ai une proposition à partager, je clique </strong><a href="/proposition" class="click-link">ici</a></p>
     </div>

@@ -1,24 +1,30 @@
 <div class="navbar-parolescitoyennes">
 <!-- Logo -->
-  <%= link_to root_path, class: "navbar-logo" do %>
-    <%= image_tag ("bulles.png") %>
-  <% end %>
+  <div>
+    <%= link_to root_path, class: "navbar-logo" do %>
+      <%= image_tag ("bulles.png") %>
+    <% end %>
+  </div>
 <!-- Navigation -->
   <div class="navbar-center">
     <ul class="list-inline">
       <li>
-        <%= link_to "Qui nous sommes", quinoussommes_path, class: "navbar-item navbar-link", id: "quinoussommes"%>
+        <%= link_to "Les propositions", root_path, class: "navbar-item navbar-link home"%>
       </li>
       <li>
-        <%= link_to "J'ai une proposition", new_proposition_path, class: "navbar-item navbar-link proposition-item", id: "jaiuneproposition" %>
+        <%= link_to "J'ai une proposition", new_proposition_path, class: "navbar-item navbar-link active-blue", id: "jaiuneproposition" %>
       </li>
+      <li>
+        <%= link_to "Qui nous sommes", quinoussommes_path, class: "navbar-item navbar-link", id: "quinoussommes"%>
+      </li>
+    </ul>
   </div>
   <!-- Social media icons -->
   <div class="navbar-sm-blue-links">
-    <a href="https://www.facebook.com/ParolesCitoyennes.Villeneuve2020" target="_blank"><i class="fab fa-facebook"></i></a>
-    <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
-    <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
-    <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+    <a href="https://www.facebook.com/ParolesCitoyennes.Villeneuve2020" target="_blank"><i class="fab fa-facebook" ></i></a>
+    <a href="https://www.instagram.com/parolescitoyennes.vda2020/" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://twitter.com/ParolesCit_VDA " target="_blank"><i class="fab fa-twitter"></i></a>
+    <a href="https://www.youtube.com/channel/UCkyBSm4EYZB9iLoSzVVgmmA/featured?disable_polymer=1 " target="_blank"><i class="fab fa-youtube"></i></a>
   </div>
 </div>
 

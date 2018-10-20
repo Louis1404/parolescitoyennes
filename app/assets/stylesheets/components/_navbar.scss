@@ -6,6 +6,7 @@
   height: 60px;
   padding: 0px 30px;
   display: flex;
+  flex-wrap : wrap;
   align-items: center;
   justify-content: space-between;
   @media (max-width: 600px) {
@@ -13,6 +14,19 @@
     flex-wrap: wrap;
   }
 }
+
+.active-red {
+  color: $red !important;
+}
+
+.active-blue {
+  color: $blue !important;
+}
+
+.active-green {
+  color: $green !important;
+}
+
 
 .navbar-logo img {
   max-height: 50px;
@@ -27,7 +41,12 @@
 /* Basic navbar item */
 .navbar-item {
   cursor: pointer;
-  padding: 7px;
+}
+
+.home {
+  @media (max-width: 800px) {
+    display: none;
+  }
 }
 
 /* Navbar link */
@@ -68,10 +87,7 @@
   opacity: 0.3;
   text-decoration: none;
   font-size: 24px;
-  @media (max-width: 600px) {
-    font-size: 18px;
-  }
-  padding: 0px 10px;
+  padding: 0 5px;
   &:hover {
     color: $red;
     opacity: 1;
@@ -86,7 +102,7 @@
   @media (max-width: 600px) {
     font-size: 18px;
   }
-  padding: 0px 10px;
+  padding: 0px 5px;
   &:hover {
     color: $blue;
     opacity: 1;
@@ -101,7 +117,7 @@
   @media (max-width: 600px) {
     font-size: 18px;
   }
-  padding: 0px 10px;
+  padding: 0px 5px;
   &:hover {
     color: $green;
     opacity: 1;
