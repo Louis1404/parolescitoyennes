@@ -3,6 +3,7 @@ body {
     font-size: 14px;
 }
 
+
 .banner {
   background-color: white;
   text-align: center;
@@ -41,31 +42,42 @@ body {
 }
 
 .newsletter {
-  max-width: 400px;
+  max-width:500px;
   display: flex;
-  flex-diretion: column;
   flex-wrap: wrap;
   justify-content: center;
-  margin-right: 10px;
-  margin-left: 10px;
+  margin: 10px;
 }
 
 .email {
+  height: 35px;
+  margin-right: 10px;
+  margin-bottom: 10px;
   @media (max-width: 700px) {
     text-align: center;
   }
 }
 
+.btn {
+  font-size: 16px;
+  border: none;
+}
+
+.btn-primary:hover{
+  background-color: #0ebaa8;
+}
+
 #proposition {
   p {
-    font-size: 14px;
+    font-size: 16px;
   }
   text-align: center;
+  margin-top: 10px;
   .click-link {
-    color: $red;
+    color: $blue;
     font-weight: bold;
     &:hover {
-      color: $blue;
+      color: #0ebaa8;
       font-weight: bold;
       text-decoration: none;
     }
