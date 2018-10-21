@@ -8,15 +8,3 @@ import "bootstrap";
 //
 // To reference this file, add <%= javascript_pack_tag 'application' %> to the appropriate
 // layout file, like app/views/layouts/application.html.erb
-
-/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
-$('.list-inline li').click(function(){
-    $('.nav li').removeClass('active');
-    $(this).addClass('active');
-})
-
-const active = document.querySelector(".navbar-link");
-active(.addEventListener("click", (event) => {
-  const eventl = event.currentTarget;
-  eventl.classList.add("active");
-});
