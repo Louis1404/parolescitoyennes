@@ -1,5 +1,5 @@
-import swal from 'sweetalert';
-import "bootstrap";
+//import swal from 'sweetalert';
+//import "bootstrap";
 
 /* eslint no-console:0 */
 // This file is automatically compiled by Webpack, along with any other files
@@ -9,13 +9,3 @@ import "bootstrap";
 //
 // To reference this file, add <%= javascript_pack_tag 'application' %> to the appropriate
 // layout file, like app/views/layouts/application.html.erb
-document.getElementById("proposition-sent").addEventListener("click", sweatalert)
-
-
-
-const sweatalert = swal({
-  title: "Merci pour votre participation!",
-  text: "Nous avons bien reçu votre proposition",
-  icon: "success",
-  button: "Avec plaisir",
-});
