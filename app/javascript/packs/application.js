@@ -1,4 +1,4 @@
-import swal from 'sweetalert';
+//import swal from 'sweetalert';
 //import "bootstrap";
 
 /* eslint no-console:0 */
