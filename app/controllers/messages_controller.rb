@@ -10,7 +10,7 @@ class MessagesController < ApplicationController
 
     if @message.valid?
       MessageMailer.contact_me(@message).deliver_now
-      redirect_to new_proposition_path, notice: "Votre avons bien reçu votre proposition et revenons vers vous très vite. Merci!"
+      redirect_to new_proposition_path, notice: "Nous avons bien reçu votre proposition et revenons vers vous très vite. Merci!"
     else
       render :new
     end

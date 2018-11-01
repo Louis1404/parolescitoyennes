@@ -1,5 +1,3 @@
-
-//import swal from 'sweetalert';
 import "bootstrap";
 
 
