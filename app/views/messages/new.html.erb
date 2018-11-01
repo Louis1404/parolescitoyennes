@@ -16,8 +16,12 @@
       <div class="col-xs-12 col-sm-6 col-sm-offset-3">
         <div class="form-proposition">
           <%= simple_form_for @message, url: create_proposition_path do |f| %>
-            <%= notice %>
-            <%= @message.errors.full_messages.join(', ') %>
+            <div class="row">
+              <div class= "col-sm-12" style="text-align:center; margin-bottom:10px; color: #0d9b8c">
+                <%= notice %>
+                <%= @message.errors.full_messages.join(', ') %>
+              </div>
+            </div>
             <div class="form-inputs">
               <div class="form-row">
                 <div class="form-group col-sm-6">
@@ -42,7 +46,7 @@
                 <%= f.text_area :contenu, class: "form-control text-area", placeholder: 'Contenu de votre proposition', rows: 10 %>
               </div>
               <div class="form-group col-sm-12">
-                <%= f.submit 'Envoyer ma proposition', class: "btn btn-primary form-control" %>
+                <%= f.submit 'Envoyer ma proposition', class: "btn btn-primary form-control", id: "testtest" %>
               </div>
             </div>
           <% end %>
