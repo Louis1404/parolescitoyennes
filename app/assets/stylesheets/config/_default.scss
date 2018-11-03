@@ -5,36 +5,21 @@ body {
 
 h1 {
   font-family: $headers-font !important;
-  color: $red !important;
+  color: $blue !important;
+  font-size: 28px !important;
   font-weight: bold !important;
 }
 
 h2 {
   font-family: $headers-font !important;
   color: $blue !important;
-  font-size: 18px !important;
+  font-size: 20px !important;
   font-weight: bold !important;
 }
 
 h3 {
   font-family: $headers-font !important;
-  color: $blue !important;
-  font-size: 22px !important;
-  font-weight: bold !important;
-}
-
-h4 {
-  font-family: $headers-font !important;
   color: $gray !important;
-  font-size: 22px !important;
+  font-size: 20px !important;
   font-weight: bold !important;
 }
-
-h5 {
-  font-family: "Lato", "sans-serif" !important;
-  color: $gray !important;
-  font-size: 18px !important;
-  line-height: 22px !important;
-  font-weight: bold !important;
-}
-
