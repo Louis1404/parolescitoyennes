@@ -12,6 +12,7 @@ class MessagesController < ApplicationController
       MessageMailer.contact_me(@message).deliver_now
       redirect_to new_proposition_path, notice: "Nous avons bien reçu votre proposition et revenons vers vous très vite. Merci!"
     else
+      flash.now[:alert] = "Certains champs obligatoires sont manquants. Pour envoyer votre proposition, merci de les compléter."
       render :new
     end
   end
