@@ -1,4 +1,4 @@
 class ApplicationMailer < ActionMailer::Base
-  default from: 'contact@parolescitoyennes-villeneuve2020.fr'
+  default from: 'parolescitoyennes.vda2020@gmail.com'
   layout 'mailer'
 end
