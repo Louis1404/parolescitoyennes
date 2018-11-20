@@ -1,3 +1,6 @@
+.card-video-presentation {
+  margin-bottom: 40px;
+}
 
 .card{
   margin-top: 10px;
@@ -8,6 +11,10 @@
 }
 
 .card-video{
+  margin-top: 30px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius : 2px;
+  text-align: center;
   overflow: hidden;
   -webkit-transform-style: preserve-3d;
   -moz-transform-style: preserve-3d;
@@ -15,8 +22,12 @@
   -o-transform-style: preserve-3d;
   transform-style: preserve-3d;
 }
-.card .card-content {
-    padding: 10px;
+.card-content {
+    height: 80px;
+    padding: 10px 10px 10px 10px;
+    display : flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .card-photo {
